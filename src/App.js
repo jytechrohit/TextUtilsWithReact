@@ -26,7 +26,7 @@ function App() {
                 mode={mode}
                 toggleMode={toogleMode}
             />
-            <Index title="Enter the text to analyze" />
+            <Index title="Enter here the text to analyze" />
         </div>
     );
 }
