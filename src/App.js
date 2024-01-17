@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar";
 import Index from "./Components/Index";
 import "./App.css";
+import Student from "./Components/Student";
+import Validation from "./Components/Validation";
 
 function App() {
     const [mode, setMode] = useState("light");
@@ -27,6 +29,11 @@ function App() {
                 toggleMode={toogleMode}
             />
             <Index title="Enter here the text to analyze" />
+            <Student name={"Rohit"} email={"rohit@123gmail.com"} address={"delhi"} />
+
+            <br></br>
+            {/* <button onClick={() => setShow(!show)}>Toggle</button> */}
+            <Validation />
         </div>
     );
 }
